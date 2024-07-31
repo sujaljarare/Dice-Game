@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="icon" href="dice/1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container1">
+            <div class="heading">
+                <h1>Dice Game</h1>
+            </div>
+            <div class="player-detail">
+                <p>Player 1: <input type="text" id="player1" placeholder="Player 1"></p>
+                <p>Player 2: <input type="text" id="player2" placeholder="Player 2"></p>
+            </div>
+            <div class="btn">
+                <button type="submit" onclick="startGame()">Start</button>
+            </div>
+        </div>
+
+        <div class="game-container" id="game-container">
+            <div class="heading2">
+                <h1>Game Result</h1>
+            </div>
+
+            <div class="player-container">
+                <div class="game-detail">
+                    <p>Player 1 (<span id="name1"></span>) Score: <span id="score1">0</span></p>
+                </div>
+                <div class="dice-image">
+                    <img src="dice/1.png" id="dice1" alt="dice">
+                </div>
+                <div class="btn2">
+                    <button type="submit" onclick="rollDice(1)">Roll Dice</button>
+                </div>
+            </div>
+
+            <div class="player-container">
+                <div class="game-detail">
+                    <p>Player 2 (<span id="name2"></span>) Score: <span id="score2">0</span></p>
+                </div>
+                <div class="dice-image">
+                    <img src="dice/1.png" id="dice2" alt="dice">
+                </div>
+                <div class="btn2">
+                    <button type="submit" onclick="rollDice(2)">Roll Dice</button>
+                </div>
+                <div class="menu">
+                    <button type="submit" onclick="resetGame()">Reset</button>
+                    <button type="submit" onclick="goHome()">Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
